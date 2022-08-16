@@ -32,17 +32,19 @@ const DropdownPage = () => (
             <div className="card-body">
                 <h5 className="card-title">Dropdown Options</h5>
                 <h6 className="card-subtitle mb-2 text-muted">Check each one</h6>
-                <div className="row">
-                    <div className="col-md-4">
-                        <SimpleDropdownSelect data={techCompanies}/>
+                <form>
+                    <div className="row">
+                        <div className="col">
+                            <SimpleDropdownSelect data={techCompanies}/>
+                        </div>
+                        <div className="col">
+                            <SimpleDropdownSelect data={jobDescriptions}/>
+                        </div>
+                        <div className="col">
+                            <SimpleDropdownSelect data={locations}/>
+                        </div>
                     </div>
-                    <div className="col-md-4">
-                        <SimpleDropdownSelect data={jobDescriptions}/>
-                    </div>
-                    <div className="col-md-4">
-                        <SimpleDropdownSelect data={locations}/>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
