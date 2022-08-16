@@ -1,16 +1,8 @@
 import logo from './logo.svg';
 import { Link } from "react-router-dom";
 import './App.css';
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-} from "react-router-dom";
 import Select from 'react-select';
 import 'bootstrap/dist/css/bootstrap.min.css';
-  
-// import page component
-import DropdownPage from "./pages/DropdownPage";
 
 const techCompanies = [
   { label: "Apple", value: 1 },
