@@ -13,13 +13,17 @@ const techCompanies = [
 
 export default class SimpleDropdownSelect extends Component {
 
+    constructor(props) {
+        super(props);
+      }
+
     render() {
         return (
             <div className="container">
                 <div className="row">
                     <div className="col-md-4"></div>
                     <div className="col-md-4">
-                        <Select options={techCompanies} />
+                        <Select options={this.props.data} />
                     </div>
                     <div className="col-md-4"></div>
                 </div>
